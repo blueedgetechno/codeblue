@@ -1,0 +1,149 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.codeblue {
+  width: 100%;
+  padding: 10px;
+}
+
+.problems {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.prob {
+  padding: 15px 10px;
+  // margin: 5px 0;
+  font-size: 1.1em;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.prob:nth-child(even) {
+  background-color: #373c44;
+}
+
+.prob span {
+  width: 50%;
+  font-weight: bold;
+}
+
+.totsub{
+  width: 60px !important;
+  color: #328bff;
+}
+
+.accepted {
+  font-size: 0.8em;
+  height: 23px;
+  color: #04a63a;
+  font-weight: bold;
+  margin-left: 10px;
+  border: 1px solid #04a63a;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.wrong {
+  font-size: 0.8em;
+  height: 23px;
+  width: 80px;
+  text-align: center;
+  color: #cb0000;
+  font-weight: bold;
+  margin-left: 10px;
+  border: 1px solid #cb0000;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.tle {
+  font-size: 0.8em;
+  height: 23px;
+  width: 80px;
+  text-align: center;
+  color: #de8d00;
+  font-weight: bold;
+  margin-left: 10px;
+  border: 1px solid #de8d00;
+  padding: 4px;
+  border-radius: 8px;
+}
+// .queue {
+//   border: 4px solid #505053;
+//   border-top: 4px solid #1989d4;
+//   border-radius: 50%;
+//   width: 23px;
+//   height: 23px;
+//   margin-left: 10px;
+//   animation: spin 2s linear infinite;
+// }
+//
+// @keyframes spin {
+//   0% { transform: rotate(0deg); }
+//   100% { transform: rotate(360deg); }
+// }
+
+.queue,
+.queue:after,
+.queue:before {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+
+.queue {
+  color: #ffffff;
+  margin-top: -18px;
+  left: 35px;
+  position: relative;
+  transform: translateZ(0);
+  animation-delay: -0.16s;
+}
+
+.queue:after,
+.queue:before {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+
+.queue:before {
+  left: -15px;
+  animation-delay: -0.32s;
+}
+
+.queue:after {
+  left: 15px;
+}
+@-webkit-keyframes load7 {
+  0%,
+  100%,
+  80% {
+    box-shadow: 0 23px 0 -12px;
+  }
+
+  40% {
+    box-shadow: 0 23px 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  100%,
+  80% {
+    box-shadow: 0 23px 0 -12px;
+  }
+
+  40% {
+    box-shadow: 0 23px 0 0;
+  }
+}
