@@ -5,6 +5,30 @@
   padding: 10px;
 }
 
+.profile {
+  display: flex;
+  padding: 10px;
+
+  span {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: auto 10px;
+  }
+}
+
+.profile-image{
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #585858;
+  img{
+    position: relative;
+    height: 30px;
+    // left: -20%;
+  }
+}
+
 .fillup {
   width: 100%;
   padding: 10px;
@@ -54,6 +78,7 @@
 .waiting {
   display: flex;
   flex-direction: column;
+
   button {
     border: none;
     width: 100px;
@@ -157,7 +182,6 @@
   margin-top: 100px;
   animation: spin 2s linear infinite;
 }
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -284,18 +308,18 @@
   }
 }
 
-.icon-check{
+.icon-check {
   color: #00ba29;
 }
 
-.icon-x{
+.icon-x {
   color: #c9262b;
 }
 
-.icon-clock{
+.icon-clock {
   color: #d1b330;
 }
 
-.icon-alert{
+.icon-alert {
   color: #ee7411;
 }
