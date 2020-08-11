@@ -1,12 +1,70 @@
-// The ui-variables file is provided by base themes provided by Atom.
-//
-// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
-// for a full listing of what's available.
 @import "ui-variables";
 
 .codeblue {
   width: 100%;
   padding: 10px;
+}
+
+.fillup {
+  width: 100%;
+  padding: 10px;
+
+  span {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #909090;
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  input {
+    border: none;
+    padding: 5px;
+    background: #434350;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  button {
+    border: none;
+    padding: 10px;
+    position: absolute;
+    font-size: 1.2em;
+    background: #22b982;
+    margin: 40px auto;
+    left: 45%;
+    font-weight: bold;
+    border-radius: 18px;
+    color: white;
+  }
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.waiting {
+  display: flex;
+  flex-direction: column;
+  button {
+    border: none;
+    width: 100px;
+    padding: 10px;
+    margin: 50px auto auto;
+    border-radius: 10px;
+    background: #0084b4;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #fff;
+  }
 }
 
 .problems {
@@ -16,35 +74,36 @@
 }
 
 .prob {
-  padding: 15px 10px;
+  padding: 15px 8px;
   // margin: 5px 0;
   font-size: 1.1em;
   display: flex;
   justify-content: flex-start;
+  border-radius: 8px;
   cursor: pointer;
+
+  span {
+    width: 45%;
+    font-weight: bold;
+  }
 }
 
 .prob:nth-child(even) {
   background-color: #373c44;
 }
 
-.prob span {
-  width: 50%;
-  font-weight: bold;
-}
-
-.totsub{
-  width: 60px !important;
+.totsub {
+  width: 75px !important;
   color: #328bff;
 }
 
 .accepted {
   font-size: 0.8em;
   height: 23px;
-  color: #04a63a;
+  color: #fff;
+  background: #04a63a;
   font-weight: bold;
   margin-left: 10px;
-  border: 1px solid #04a63a;
   padding: 4px;
   border-radius: 8px;
 }
@@ -54,10 +113,10 @@
   height: 23px;
   width: 80px;
   text-align: center;
-  color: #cb0000;
+  color: #fff;
   font-weight: bold;
   margin-left: 10px;
-  border: 1px solid #cb0000;
+  background: #cb0000;
   padding: 4px;
   border-radius: 8px;
 }
@@ -67,27 +126,47 @@
   height: 23px;
   width: 80px;
   text-align: center;
-  color: #de8d00;
+  color: #fff;
+  background: #de8d00;
   font-weight: bold;
   margin-left: 10px;
-  border: 1px solid #de8d00;
   padding: 4px;
   border-radius: 8px;
 }
-// .queue {
-//   border: 4px solid #505053;
-//   border-top: 4px solid #1989d4;
-//   border-radius: 50%;
-//   width: 23px;
-//   height: 23px;
-//   margin-left: 10px;
-//   animation: spin 2s linear infinite;
-// }
-//
-// @keyframes spin {
-//   0% { transform: rotate(0deg); }
-//   100% { transform: rotate(360deg); }
-// }
+
+.runtime {
+  font-size: 0.8em;
+  height: 23px;
+  width: 80px;
+  text-align: center;
+  color: #fff;
+  background: #af4827;
+  font-weight: bold;
+  margin-left: 10px;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.loader {
+  border: 16px solid #505053;
+  border-top: 16px solid #1989d4;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: 90px;
+  margin-top: 100px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 .queue,
 .queue:after,
@@ -146,4 +225,77 @@
   40% {
     box-shadow: 0 23px 0 0;
   }
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+}
+
+.up {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+
+  span {
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  button {
+    border: none;
+    background: #383f4b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+}
+
+.down {
+  display: none;
+  flex-direction: column;
+  padding: 5px 10px;
+  transition: 1s;
+}
+
+.verdict {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 1px 0;
+  background: #191c20;
+
+  span {
+    font-size: 1.2em;
+    color: #bbb;
+    font-weight: bold;
+  }
+}
+
+.icon-check{
+  color: #00ba29;
+}
+
+.icon-x{
+  color: #c9262b;
+}
+
+.icon-clock{
+  color: #d1b330;
+}
+
+.icon-alert{
+  color: #ee7411;
 }
