@@ -343,7 +343,19 @@
   transition: 1s;
 }
 
-.verdict {
+.verdict{
+  display: flex;
+  flex-direction: column;
+}
+
+.errordetails{
+  pre{
+    font-weight: bold;
+    color: #b3b3b3;
+  }
+}
+
+.show-verdict {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
