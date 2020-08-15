@@ -349,14 +349,37 @@
 }
 
 .errordetails{
+  display: block;
   pre{
     font-weight: bold;
     color: #b3b3b3;
   }
 }
 
+.comparision{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+
+.outbox{
+  width: 50%;
+  margin: 1px;
+  pre{
+    height: 100%;
+    color: #ff6262;
+  }
+}
+
+.outbox:first-child{
+  pre{
+    color: #42ee48;
+  }
+}
+
 .show-verdict {
   display: flex;
+  cursor: pointer;
   flex-direction: row;
   justify-content: space-between;
   padding: 5px;
