@@ -21,7 +21,6 @@
   height: 30px;
   overflow: hidden;
   border-radius: 50%;
-  border: 1px solid #3e3e42;
 
   img {
     position: relative;
@@ -45,9 +44,9 @@
   input {
     border: none;
     padding: 5px;
-    background: #434350;
+    background: @background-color-selected;
     border-radius: 8px;
-    color: white;
+    color: @text-color-subtle;
     font-weight: bold;
     text-align: center;
   }
@@ -111,7 +110,7 @@
 .refreshsubmissions {
   position: absolute;
   border: none;
-  background: #383f4b;
+  background: @background-color-selected; //#383f4b;
   padding: 5px 10px;
   border-radius: 5px;
   font-weight: bold;
@@ -141,7 +140,7 @@
 }
 
 .prob:nth-child(even) {
-  background-color: #373c44;
+  background-color: @background-color-selected;//#373c44;
 }
 
 .totsub {
@@ -319,7 +318,7 @@
 
   button {
     border: none;
-    background: #383f4b;
+    background: @background-color-selected;//#383f4b;
     padding: 5px 10px;
     border-radius: 5px;
     font-weight: bold;
@@ -352,7 +351,7 @@
   display: block;
   pre{
     font-weight: bold;
-    color: #b3b3b3;
+    color: @text-color;
   }
 }
 
@@ -365,7 +364,9 @@
 .outbox{
   width: 50%;
   margin: 1px;
+
   pre{
+    background: @background-color-highlight;
     height: 100%;
     color: #ff6262;
   }
@@ -373,7 +374,7 @@
 
 .outbox:first-child{
   pre{
-    color: #42ee48;
+    color: #00d708;
   }
 }
 
@@ -384,11 +385,11 @@
   justify-content: space-between;
   padding: 5px;
   margin: 1px 0;
-  background: #191c20;
+  background: @background-color-selected;//#191c20;
+  border-radius: 4px;
 
   span {
     font-size: 1.2em;
-    color: #bbb;
     font-weight: bold;
   }
 }
@@ -434,7 +435,7 @@
   flex-direction: row;
   padding: 5px;
   margin: 1px 0;
-  background: #191c20;
+  background: @background-color-highlight;
 
   i{
     width: 15%;
@@ -447,7 +448,7 @@
 
   span {
     font-size: 1.2em;
-    color: #bbb;
+    color: @text-color-subtle; //#bbb;
     font-weight: bold;
   }
 
@@ -478,4 +479,80 @@
 
 .titlename{
   color: #1abc9c;
+}
+
+// Play section
+
+body {
+  background-color: white;
+  color: darkblue;
+}
+
+.container {
+  width: 100%;
+}
+
+.page {
+  position: relative;
+  top: 10px;
+}
+
+.puzzle {
+  width: 280px;;
+  height: 280px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+}
+
+.piece{
+  width: 33%;
+  height: 33%;
+  background: #f4f4f4;
+  background: url(https://images.unsplash.com/photo-1559633657-c3008b46bac6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80);
+  background-size: 280px;
+}
+
+.finalimage img{
+  width: 280px;
+  height: 280px;
+}
+
+.p1{
+  background-position: 0 0;
+}
+
+.p2{
+  background-position: 50% 0;
+}
+
+.p3{
+  background-position: 100% 0;
+}
+
+.p4{
+  background-position: 0 50%;
+}
+
+.p5{
+  background-position: 50% 50%;
+}
+
+.p6{
+  background-position: 100% 50%;
+}
+
+.p7{
+  background-position: 0 100%;
+}
+
+.p8{
+  background-position: 50% 100%;
+}
+
+.p9{
+  background-position: 100% 100%;
+  opacity: 0;
 }
