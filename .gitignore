@@ -1,9 +1,11 @@
 .DS_Store
 npm-debug.log
 node_modules
-todo.txt
 main.py
+backup.js
+todo.txt
 rough.js
+rough1.js
 rough2.js
 rough3.js
-backup.js
+codeforces-scraper.js
