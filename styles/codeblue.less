@@ -41,7 +41,7 @@
     margin-right: 10px;
   }
 
-  input {
+  input[type=text] {
     border: none;
     padding: 5px;
     background: @background-color-selected;
@@ -49,6 +49,15 @@
     color: @text-color-subtle;
     font-weight: bold;
     text-align: center;
+  }
+
+  input[type=checkbox] {
+    display: inline-block;
+    width: 16pt;
+    padding: 2px 0 0 3px;
+    margin: 20px 10px;
+    vertical-align: middle;
+    cursor: pointer;
   }
 
   button {
@@ -64,6 +73,15 @@
     color: white;
   }
 }
+// #check{
+//   border: none;
+//   background: #888;
+//   border-radius: 10px;
+// }
+//
+// .checkthis{
+//   font-size: 1.5em;
+// }
 
 .timer {
   display: flex;
@@ -93,10 +111,11 @@
 }
 
 .headinfo {
-  i{
+  i {
     color: #d1a915;
     cursor: pointer;
   }
+
   span {
     position: absolute;
     padding: 5px 10px;
@@ -140,7 +159,7 @@
 }
 
 .prob:nth-child(even) {
-  background-color: @background-color-selected;//#373c44;
+  background-color: @background-color-selected; //#373c44;
 }
 
 .totsub {
@@ -185,7 +204,7 @@
   border-radius: 8px;
 }
 
-.mle{
+.mle {
   font-size: 0.8em;
   height: 23px;
   width: 80px;
@@ -318,19 +337,19 @@
 
   button {
     border: none;
-    background: @background-color-selected;//#383f4b;
+    background: @background-color-selected; //#383f4b;
     padding: 5px 10px;
     border-radius: 5px;
     font-weight: bold;
   }
 }
 
-.realsubmit{
+.realsubmit {
   background: #188330 !important;
   color: #fff;
 }
 
-.cancel{
+.cancel {
   background: #a11c18 !important;
   color: #fff;
 }
@@ -342,38 +361,39 @@
   transition: 1s;
 }
 
-.verdict{
+.verdict {
   display: flex;
   flex-direction: column;
 }
 
-.errordetails{
+.errordetails {
   display: block;
-  pre{
+
+  pre {
     font-weight: bold;
     color: @text-color;
   }
 }
 
-.comparision{
+.comparision {
   display: flex;
   flex-direction: row;
   margin-bottom: 5px;
 }
 
-.outbox{
+.outbox {
   width: 50%;
   margin: 1px;
 
-  pre{
+  pre {
     background: @background-color-highlight;
     height: 100%;
     color: #ff6262;
   }
 }
 
-.outbox:first-child{
-  pre{
+.outbox:first-child {
+  pre {
     color: #00d708;
   }
 }
@@ -385,7 +405,7 @@
   justify-content: space-between;
   padding: 5px;
   margin: 1px 0;
-  background: @background-color-selected;//#191c20;
+  background: @background-color-selected; //#191c20;
   border-radius: 4px;
 
   span {
@@ -406,7 +426,7 @@
   color: #d1b330;
 }
 
-.icon-hourglass{
+.icon-hourglass {
   color: #0ab3d4;
 }
 
@@ -414,19 +434,19 @@
   color: #ee7411;
 }
 
-.icon-stop{
+.icon-stop {
   color: #e93961;
 }
 
-.icon-database{
+.icon-database {
   color: #b553e4;
 }
 
-.icon-light-bulb{
+.icon-light-bulb {
   color: #d1a915;
 }
 
-.icon-flame{
+.icon-flame {
   color: #ffef15;
 }
 
@@ -437,7 +457,7 @@
   margin: 1px 0;
   background: @background-color-highlight;
 
-  i{
+  i {
     width: 15%;
     font-style: normal;
     font-weight: bold;
@@ -469,18 +489,17 @@
   }
 }
 
-.icon-chevron-down{
+.icon-chevron-down {
   cursor: pointer;
 }
 
-.icon-chevron-right{
+.icon-chevron-right {
   cursor: pointer;
 }
 
-.titlename{
+.titlename {
   color: #1abc9c;
 }
-
 // Play section
 
 body {
@@ -498,7 +517,7 @@ body {
 }
 
 .puzzle {
-  width: 280px;;
+  width: 280px;
   height: 280px;
   display: flex;
   justify-content: space-between;
@@ -507,52 +526,52 @@ body {
   /* flex-wrap: wrap; */
 }
 
-.piece{
+.piece {
   width: 33%;
   height: 33%;
   background: #f4f4f4;
-  background: url(https://images.unsplash.com/photo-1559633657-c3008b46bac6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80);
+  background: url("https://images.unsplash.com/photo-1559633657-c3008b46bac6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80");
   background-size: 280px;
 }
 
-.finalimage img{
+.finalimage img {
   width: 280px;
   height: 280px;
 }
 
-.p1{
+.p1 {
   background-position: 0 0;
 }
 
-.p2{
+.p2 {
   background-position: 50% 0;
 }
 
-.p3{
+.p3 {
   background-position: 100% 0;
 }
 
-.p4{
+.p4 {
   background-position: 0 50%;
 }
 
-.p5{
+.p5 {
   background-position: 50% 50%;
 }
 
-.p6{
+.p6 {
   background-position: 100% 50%;
 }
 
-.p7{
+.p7 {
   background-position: 0 100%;
 }
 
-.p8{
+.p8 {
   background-position: 50% 100%;
 }
 
-.p9{
+.p9 {
   background-position: 100% 100%;
   opacity: 0;
 }
