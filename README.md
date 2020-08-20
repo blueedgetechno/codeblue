@@ -37,6 +37,16 @@ oj l https://codeforces.com/
 - Get your official standing of the live contest 👥
 - Play minigames while you wait for the contest 🎮
 
+## Guide
+- Set your preferences in settings of the package
+- Click on your standing to minimize problems view
+- Click on your profile to refresh problems
+
+## Limitations
+- Currently, test and run code option is only available for python users
+
+<br>  
+
 ![overview](https://raw.githubusercontent.com/blueedgetechno/codeblue/master/img/face.png)
 
 ![work](https://raw.githubusercontent.com/blueedgetechno/codeblue/master/img/work.png)
@@ -45,6 +55,11 @@ oj l https://codeforces.com/
 # Play while you wait
 
 ![game](https://raw.githubusercontent.com/blueedgetechno/codeblue/master/img/game.png)
+<hr>
+
+# Detailed and concise error presentation
+
+![error](https://raw.githubusercontent.com/blueedgetechno/codeblue/master/img/error.png)
 <hr>
 
 # Wrong answer ?
