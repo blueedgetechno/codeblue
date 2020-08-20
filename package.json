@@ -2,12 +2,12 @@
   "name": "codeblue",
   "main": "./lib/codeblue",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "Run and submit solutions of codeforces live contest from your favorite text editor",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": "codeblue:toggle"
   },
-  "repository": "https://github.com/atom/codeblue",
+  "repository": "https://github.com/blueedgetechno/codeblue",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
@@ -21,7 +21,6 @@
     "pretty-error": "^2.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "request": "^2.88.2",
-    "tunnel": "0.0.6"
+    "request": "^2.88.2"
   }
 }

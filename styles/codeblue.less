@@ -29,17 +29,9 @@
   }
 }
 
-.fillup {
-  width: 100%;
-  padding: 10px;
-
-  span {
-    font-weight: bold;
-    font-size: 1.1em;
-    color: #909090;
-    padding: 10px;
-    margin-right: 10px;
-  }
+.firstrow {
+  display: flex;
+  flex-direction: row;
 
   input[type=text] {
     border: none;
@@ -51,16 +43,40 @@
     text-align: center;
   }
 
+  button{
+    border: none;
+    padding: 0 10px;
+    font-size: 1.2em;
+    background: none;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+  }
+
+}
+
+.fillup {
+  width: 100%;
+  padding: 10px;
+
+  span {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #909090;
+    padding: 5px;
+    margin-right: 10px;
+  }
+
   input[type=checkbox] {
     display: inline-block;
     width: 16pt;
     padding: 2px 0 0 3px;
-    margin: 20px 10px;
+    margin: 20px 10px 20px 40px;
     vertical-align: middle;
     cursor: pointer;
   }
 
-  button {
+  button[id=submit] {
     border: none;
     padding: 10px;
     position: absolute;
@@ -124,6 +140,18 @@
     right: 10px;
     cursor: pointer;
   }
+}
+
+.refreshproblems{
+  position: absolute;
+  border: none;
+  background: @background-color-selected; //#383f4b;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  top: 21px;
+  left: 10px;
+  opacity: 0;
 }
 
 .refreshsubmissions {
@@ -502,11 +530,6 @@
 }
 // Play section
 
-body {
-  background-color: white;
-  color: darkblue;
-}
-
 .container {
   width: 100%;
 }
@@ -576,8 +599,8 @@ body {
   opacity: 0;
 }
 
-.nextbutton{
-  padding: 0px !important;
+.nextbutton {
+  padding: 0 !important;
   width: 50px !important;
   height: 30px !important;
   font-size: 1em !important;
