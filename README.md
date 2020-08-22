@@ -39,11 +39,14 @@ oj l https://codeforces.com/
 
 ## Guide
 - Set your preferences in settings of the package, in advance
+- Click on Refresh button to refresh the standing
 - Click on your standing to minimize problems view
 - Click on your profile picture to refresh problems
+- Click on an example number to copy its input data
 
 ## Limitations
 - Currently, test and run code option is only available for python users
+- I will try to remove the dependency of online-judge-tools for non-python users in future updates
 
 <br>  
 
