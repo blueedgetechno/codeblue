@@ -28,8 +28,8 @@ oj l https://codeforces.com/
 
 ## Features
 
-- Fetch and load codeforces contest details ⚡
-- Automatically create environment for contest including woking files 💻
+- Fetch and load details of live codeforces contest ⚡
+- Automatically create an environment for contest including working files 💻
 - Run code with official sample cases of any particular problem 🔭
 - Compare your output with expected output in a elegant manner 📺
 - Get your code verdicts like OK ✅, Wrong answer ❌, TLE 🕒, MLE 🛢, Runtime error ⚠, Queue ⏳, Hacked ☠️
@@ -38,9 +38,9 @@ oj l https://codeforces.com/
 - Play minigames while you wait for the contest 🎮
 
 ## Guide
-- Set your preferences in settings of the package
+- Set your preferences in settings of the package, in advance
 - Click on your standing to minimize problems view
-- Click on your profile to refresh problems
+- Click on your profile picture to refresh problems
 
 ## Limitations
 - Currently, test and run code option is only available for python users
