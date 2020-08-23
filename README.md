@@ -11,6 +11,7 @@
 ## An Atom package for all your competitive coding needs
 <br>
 
+![overview](https://raw.githubusercontent.com/blueedgetechno/codeblue/master/img/face.png)
 
 ### Installation
 Step 1.
@@ -32,25 +33,31 @@ oj l https://codeforces.com/
 - Automatically create an environment for contest including working files 💻
 - Run code with official sample cases of any particular problem 🔭
 - Compare your output with expected output in a elegant manner 📺
-- Get your code verdicts like OK ✅, Wrong answer ❌, TLE 🕒, MLE 🛢, Runtime error ⚠, Queue ⏳, Hacked ☠️
+- Get your code verdicts like OK ✅, Wrong answer ❌, TLE 🕒, MLE 🛢, Runtime error or Compilation error ⚠, Queue ⏳, Hacked ☠️
 - Submit 🏳‍🌈 your code from your favorite text editor
 - Get your official standing of the live contest 👥
 - Play minigames while you wait for the contest 🎮
 
+## Updates
+- Now supports the feature to test and run C++(g++ compiler) and C (gcc compiler) language codes 🎉🎊
+- Option to run code for case independent problems 📡
+
 ## Guide
 - Set your preferences in settings of the package, in advance
+- Delete the folders and files of working directory before contest
 - Click on Refresh button to refresh the standing
 - Click on your standing to minimize problems view
 - Click on your profile picture to refresh problems
 - Click on an example number to copy its input data
 
 ## Limitations
-- Currently, test and run code option is only available for python users
 - I will try to remove the dependency of online-judge-tools for non-python users in future updates
 
-<br>  
+- While running C or C++ files, it sometimes run the previously compiled file and shows the same verdict. Incase of that delete the previously compiled file and run the code again
 
-![overview](https://raw.githubusercontent.com/blueedgetechno/codeblue/master/img/face.png)
+##### Any feedback will be highly appreciable
+
+<br>  
 
 ![work](https://raw.githubusercontent.com/blueedgetechno/codeblue/master/img/work.png)
 <hr>
@@ -76,4 +83,3 @@ oj l https://codeforces.com/
 
 # MLE - Its a thing too
 ![TLE](https://raw.githubusercontent.com/blueedgetechno/codeblue/master/img/mle.png)
-<hr>

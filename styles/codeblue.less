@@ -3,6 +3,8 @@
 .codeblue {
   width: 100%;
   padding: 10px;
+  height: 92vh;
+  overflow-y: scroll;
 }
 
 .profile {
@@ -43,7 +45,7 @@
     text-align: center;
   }
 
-  button{
+  button {
     border: none;
     padding: 0 10px;
     font-size: 1.2em;
@@ -52,7 +54,6 @@
     font-weight: bold;
     color: white;
   }
-
 }
 
 .fillup {
@@ -68,12 +69,21 @@
   }
 
   input[type=checkbox] {
-    display: inline-block;
-    width: 16pt;
+    -webkit-appearance: none;
+    background: none;
+    width: 12pt;
+    height: 12pt;
     padding: 2px 0 0 3px;
-    margin: 20px 10px 20px 40px;
+    margin: 20px 10px 25px 60px;
     vertical-align: middle;
+    border: 1.5px solid @text-color;
+    border-radius: 50%;
+    outline: none;
     cursor: pointer;
+  }
+
+  input[type=checkbox]:checked{
+    background: #0e45c1;
   }
 
   button[id=submit] {
@@ -89,15 +99,6 @@
     color: white;
   }
 }
-// #check{
-//   border: none;
-//   background: #888;
-//   border-radius: 10px;
-// }
-//
-// .checkthis{
-//   font-size: 1.5em;
-// }
 
 .timer {
   display: flex;
@@ -142,7 +143,7 @@
   }
 }
 
-.refreshproblems{
+.refreshproblems {
   position: absolute;
   border: none;
   background: @background-color-selected; //#383f4b;
@@ -340,6 +341,43 @@
 .actions {
   display: flex;
   flex-direction: column;
+}
+
+.addoption {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.igcasediv {
+  width: 85px;
+  margin: 5px 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  input[type=checkbox] {
+    -webkit-appearance: none;
+    display: block;
+    margin: 2px 0 0;
+    background: none;
+    border: 1.5px solid @text-color;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+  }
+
+  input[type=checkbox]:checked{
+    background: #1351de;
+  }
+
+
+  span {
+    font-weight: bold;
+    color: #178eeb;
+  }
 }
 
 .tasks {
@@ -611,9 +649,7 @@
 .copied {
   animation: pop 0.3s linear;
   transition: 0.3s;
-
 }
-
 @keyframes pop {
   0% {
     transform: scale(1) translateZ(0);
