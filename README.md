@@ -9,9 +9,11 @@
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/blueedgetechno)
 
 ## An Atom package for all your competitive coding needs
+
+A codeforces helper that can test, run, present and submit solutions on codeforces
 <br>
 
-![overview](https://raw.githubusercontent.com/blueedgetechno/codeblue/master/img/face.png)
+![overview](https://raw.githubusercontent.com/blueedgetechno/codeblue/master/img/code.gif)
 
 ### Installation
 Step 1.
@@ -58,6 +60,9 @@ oj l https://codeforces.com/
 ##### Any feedback will be highly appreciable
 
 <br>  
+
+![overview](https://raw.githubusercontent.com/blueedgetechno/codeblue/master/img/face.png)
+
 
 ![work](https://raw.githubusercontent.com/blueedgetechno/codeblue/master/img/work.png)
 <hr>
