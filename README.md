@@ -46,7 +46,7 @@ oj l https://codeforces.com/
 
 ## Guide
 - Set your preferences in settings of the package, in advance
-- Delete the folders and files of working directory before contest
+- Delete the folders and files of working directory before contest and check the create environment
 - Click on Refresh button to refresh the standing
 - Click on your standing to minimize problems view
 - Click on your profile picture to refresh problems
@@ -56,6 +56,8 @@ oj l https://codeforces.com/
 - I will try to remove the dependency of online-judge-tools for non-python users in future updates
 
 - While running C or C++ files, it sometimes run the previously compiled file and shows the same verdict. Incase of that delete the previously compiled file and run the code again
+
+- Not tested for linux or macOs
 
 ##### Any feedback will be highly appreciable
 

@@ -82,7 +82,7 @@
     cursor: pointer;
   }
 
-  input[type=checkbox]:checked{
+  input[type=checkbox]:checked {
     background: #0e45c1;
   }
 
@@ -146,12 +146,13 @@
 .refreshproblems {
   position: absolute;
   border: none;
-  background: @background-color-selected; //#383f4b;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   font-weight: bold;
   top: 21px;
-  left: 10px;
+  left: 20px;
   opacity: 0;
 }
 
@@ -369,10 +370,9 @@
     cursor: pointer;
   }
 
-  input[type=checkbox]:checked{
+  input[type=checkbox]:checked {
     background: #1351de;
   }
-
 
   span {
     font-weight: bold;
@@ -590,7 +590,7 @@
 .piece {
   width: 33%;
   height: 33%;
-  background: #f4f4f4;
+  background: inherit;
   // background: url("https://images.unsplash.com/photo-1559633657-c3008b46bac6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80");
   background-size: 280px;
 }
@@ -662,4 +662,83 @@
   100% {
     transform: scale(1) translateZ(0);
   }
+}
+
+.square {
+  width: 33.33%;
+  height: 33.33%;
+  background: inherit;
+  border-width: 2px;
+  border-color: @text-color;
+  border-style: solid;
+}
+
+.square:nth-child(1) {
+  border-width: 0 2px 2px 0;
+}
+
+.square:nth-child(2) {
+  border-width: 0 2px 2px 2px;
+}
+
+.square:nth-child(3) {
+  border-width: 0 0 2px 2px;
+}
+
+.square:nth-child(4) {
+  border-width: 2px 2px 2px 0;
+}
+
+.square:nth-child(6) {
+  border-width: 2px 0 2px 2px;
+}
+
+.square:nth-child(7) {
+  border-width: 2px 2px 0 0;
+}
+
+.square:nth-child(8) {
+  border-width: 2px 2px 0 2px;
+}
+
+.square:nth-child(9) {
+  border-width: 2px 0 0 2px;
+}
+
+.cross::after{
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 28%;
+  margin: 2% 15%;
+  transform: rotate(45deg);
+  background: @text-color;
+}
+
+.cross::before{
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 28%;
+  margin: 2% 15%;
+  transform: rotate(-45deg);
+  background: @text-color;
+  z-index: 1;
+}
+
+.circle::before{
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 22%;
+  margin: 3.5% 4%;
+  border: 5px solid @text-color;
+  border-radius: 50%;
+}
+
+.score{
+  width: 100%;
+  text-align: right;
+  padding: 10px;
+  font-size: 1.5em;
 }
