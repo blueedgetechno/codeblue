@@ -107,7 +107,7 @@
   line-height: 50px;
   font-size: 24px;
   font-weight: bold;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .waiting {
@@ -118,12 +118,34 @@
     border: none;
     width: 100px;
     padding: 10px;
-    margin: 50px auto auto;
+    margin: 25px auto auto;
     border-radius: 10px;
     background: #0084b4;
     font-size: 1.4em;
     font-weight: bold;
     color: #fff;
+  }
+}
+
+.gamelist {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0 0 0;
+
+  span{
+    cursor: pointer;
+    font-size: 1.4em;
+    font-weight: 600;
+    padding: 2px 3px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  span:hover{
+    background: @background-color-selected;
+    transition: 0.3s;
   }
 }
 
@@ -184,6 +206,7 @@
 
   span {
     width: 45%;
+    padding-right: 10px;
     font-weight: bold;
   }
 }
@@ -643,7 +666,7 @@
   height: 30px !important;
   font-size: 1em !important;
   margin: 0;
-  transform: translate(120px,-42px);
+  transform: translate(120px,-6px);
 }
 
 .copied {
@@ -705,7 +728,7 @@
   border-width: 2px 0 0 2px;
 }
 
-.cross::after{
+.cross::after {
   content: "";
   position: absolute;
   width: 5px;
@@ -715,7 +738,7 @@
   background: @text-color;
 }
 
-.cross::before{
+.cross::before {
   content: "";
   position: absolute;
   width: 5px;
@@ -726,7 +749,7 @@
   z-index: 1;
 }
 
-.circle::before{
+.circle::before {
   content: "";
   position: absolute;
   width: 25%;
@@ -736,9 +759,9 @@
   border-radius: 50%;
 }
 
-.score{
+.score {
   width: 100%;
   text-align: right;
-  padding: 10px;
+  padding: 5px;
   font-size: 1.5em;
 }
