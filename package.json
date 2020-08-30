@@ -1,7 +1,7 @@
 {
   "name": "codeblue",
   "main": "./lib/codeblue",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Run and submit solutions of codeforces live contest from your favorite text editor",
   "keywords": [],
   "activationCommands": {
