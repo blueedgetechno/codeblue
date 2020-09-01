@@ -13,7 +13,7 @@
 A codeforces helper that can test, run, present and submit solutions on codeforces
 <br>
 
-![overview](https://raw.githubusercontent.com/blueedgetechno/codeblue/master/img/code.gif)
+![overview](https://raw.githubusercontent.com/blueedgetechno/codeblue/master/img/codeblue.gif)
 
 ### Installation
 Step 1.
