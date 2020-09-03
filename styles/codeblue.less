@@ -131,9 +131,9 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
-  padding: 25px 0 0 0;
+  padding: 25px 0 0;
 
-  span{
+  span {
     cursor: pointer;
     font-size: 1.4em;
     font-weight: 600;
@@ -143,7 +143,7 @@
     transition: 0.3s;
   }
 
-  span:hover{
+  span:hover {
     background: @background-color-selected;
     transition: 0.3s;
   }
@@ -187,6 +187,79 @@
   font-weight: bold;
   top: 20px;
   right: 10px;
+}
+
+.standings {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.fredhead *{
+  background: @background-color-highlight;
+  border-radius: 2px;
+}
+
+.friendslist *{
+  padding: 2px;
+  margin: 1px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.fredhead,
+.friend {
+  width: max-content;
+  display: flex;
+}
+
+.rank {
+  width: 45px;
+}
+
+
+.friendid{
+  width: 80px;
+}
+
+.cmaster{
+  color: #f957f9;
+}
+
+.expert{
+  color: #377df9;
+}
+
+.specialist{
+  color: #59f6ec;
+}
+
+.pupil{
+  color: #72f972;
+}
+
+.newbie{
+  color: #968e81;
+}
+
+.probcell{
+  width: 45px;
+  font-weight: 900;
+}
+
+.alpha{
+  color: #1e76fa;
+}
+
+.correct{
+  color: #11c84c;
+}
+
+.incorrectattempt{
+  color: #908d8d;
+}
+
+.incorrectsol{
+  color: #f13d4f;
 }
 
 .problems {

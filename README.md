@@ -41,14 +41,14 @@ oj l https://codeforces.com/
 - Play minigames while you wait for the contest 🎮
 
 ## Updates
+- Compare your standing with your friends during live contest 👥
 - Now supports the feature to test and run C++(g++ compiler) and C (gcc compiler) language codes 🎉🎊
-- Option to run code for case independent problems 📡
 
 ## Guide
 - Set your preferences in settings of the package, in advance
 - Delete the folders and files of working directory before contest and check the create environment
 - Click on Refresh button to refresh the standing
-- Click on your standing to minimize problems view
+- Click on your standing to minimize/maximize friends standing view
 - Click on your profile picture to refresh problems
 - Click on an example number to copy its input data
 
