@@ -1,10 +1,6 @@
 {
   "context-menu": {
     "atom-text-editor": [
-      {
-        "label": "Toggle codeblue",
-        "command": "codeblue:toggle"
-      }
     ]
   },
   "menu": [
