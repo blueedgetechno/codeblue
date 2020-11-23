@@ -1,6 +1,6 @@
 @import "ui-variables";
 
-::selection{
+::selection {
   background: inherit;
   color: inherit;
 }
@@ -14,12 +14,37 @@
 
 .profile {
   display: flex;
+  justify-content: space-between;
   padding: 10px;
 
-  span {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: auto 10px;
+  .profiledesc {
+    display: flex;
+
+    span {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: auto 10px;
+    }
+  }
+
+  .loginerror {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+
+    span {
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .notLog {
+      font-weight: bold;
+      // color: #12d248;
+    }
+
+    .doLog {
+      color: #12d248;
+    }
   }
 }
 
@@ -32,7 +57,6 @@
   img {
     position: relative;
     height: 30px;
-    // left: -20%;
   }
 }
 
@@ -64,13 +88,57 @@
 .fillup {
   width: 100%;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   span {
     font-weight: bold;
     font-size: 1.1em;
-    color: #909090;
+    color: @text-color;
     padding: 5px;
     margin-right: 10px;
+  }
+
+  .tips{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    i{
+      color: #d1a915;
+    }
+
+    h3{
+      margin: 5px auto;
+      font-weight: bolder;
+      text-decoration: underline;
+    }
+
+    ul{
+      line-height: 18px;
+
+      li{
+        margin: 10px auto;
+      }
+    }
+  }
+
+  .customisation{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    line-height: 30px;
+
+    .initoption{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      span{
+        font-weight: 500;
+      }
+    }
   }
 
   input[type=checkbox] {
@@ -78,9 +146,9 @@
     background: none;
     width: 12pt;
     height: 12pt;
-    padding: 2px 0 0 3px;
-    margin: 20px 10px 25px 60px;
-    vertical-align: middle;
+    // padding: 2px 0 0 3px;
+    // margin: 20px 10px 25px 60px;
+    // vertical-align: middle;
     border: 1.5px solid @text-color;
     border-radius: 50%;
     outline: none;
@@ -94,14 +162,12 @@
   button[id=submit] {
     border: none;
     padding: 10px;
-    position: absolute;
     font-size: 1.2em;
     background: #22b982;
     margin: 40px auto;
-    left: 45%;
     font-weight: bold;
     border-radius: 18px;
-    color: white;
+    color: #f2f2f2;
   }
 }
 
@@ -199,12 +265,12 @@
   overflow-x: scroll;
 }
 
-.fredhead *{
+.fredhead * {
   background: @background-color-highlight;
   border-radius: 2px;
 }
 
-.friendslist *{
+.friendslist * {
   padding: 2px;
   margin: 1px;
   font-weight: bold;
@@ -221,49 +287,48 @@
   width: 45px;
 }
 
-
-.friendid{
+.friendid {
   width: 80px;
 }
 
-.cmaster{
+.cmaster {
   color: #f957f9;
 }
 
-.expert{
+.expert {
   color: #377df9;
 }
 
-.specialist{
+.specialist {
   color: #59f6ec;
 }
 
-.pupil{
+.pupil {
   color: #72f972;
 }
 
-.newbie{
+.newbie {
   color: #968e81;
 }
 
-.probcell{
+.probcell {
   width: 45px;
   font-weight: 900;
 }
 
-.alpha{
+.alpha {
   color: #1e76fa;
 }
 
-.correct{
+.correct {
   color: #11c84c;
 }
 
-.incorrectattempt{
+.incorrectattempt {
   color: #908d8d;
 }
 
-.incorrectsol{
+.incorrectsol {
   color: #f13d4f;
 }
 
@@ -842,4 +907,10 @@
   text-align: right;
   padding: 5px;
   font-size: 1.5em;
+}
+
+button[disabled]{
+  color: @text-color-subtle;
+  cursor: not-allowed;
+  // pointer-events: none;
 }

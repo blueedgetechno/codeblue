@@ -31,7 +31,7 @@ oj l https://codeforces.com/
 
 ## Features
 
-- Fetch and load details of live codeforces contest ⚡
+- Fetch and load details of a live codeforces contest ⚡
 - Automatically create an environment for contest including working files 💻
 - Run code with official sample cases of any particular problem 🔭
 - Compare your output with expected output in a elegant manner 📺
@@ -41,14 +41,14 @@ oj l https://codeforces.com/
 - Play minigames while you wait for the contest 🎮
 
 ## Updates
-- Compare your standing with your friends during live contest 👥
-- Now supports the feature to test and run C++(g++ compiler) and C (gcc compiler) language codes 🎉🎊
+- Option to detect and login from the plugin itself
+- Now you can change working directory by right clicking in the tree view
 
 ## Guide
 - Set your preferences in settings of the package, in advance
 - Delete the folders and files of working directory before contest and check the create environment
-- Click on Refresh button to refresh the standing
-- Click on your standing to minimize/maximize friends standing view
+- Click on Refresh button to refresh the standings
+- Click on the yellow user icon to minimize/maximize friends standing view
 - Click on your profile picture to refresh problems
 - Click on an example number to copy its input data
 

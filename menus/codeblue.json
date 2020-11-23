@@ -1,22 +1,22 @@
 {
   "context-menu": {
-    "atom-text-editor": [
+    ".tree-view li.directory .header": [{
+        "type": "separator"
+      },
+      {
+        "label": "Codeblue: Set as working directory",
+        "command": "codeblue:set-working-directory"
+      }
     ]
   },
-  "menu": [
-    {
-      "label": "Packages",
-      "submenu": [
-        {
-          "label": "codeblue",
-          "submenu": [
-            {
-              "label": "Start",
-              "command": "codeblue:toggle"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+  "menu": [{
+    "label": "Packages",
+    "submenu": [{
+      "label": "codeblue",
+      "submenu": [{
+        "label": "Start",
+        "command": "codeblue:toggle"
+      }]
+    }]
+  }]
 }

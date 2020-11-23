@@ -29,5 +29,12 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "request": "^2.88.2"
+  },
+  "consumedServices": {
+    "tree-view": {
+      "versions": {
+        "^1.0.0": "consumeTreeView"
+      }
+    }
   }
 }
